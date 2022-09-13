@@ -1,0 +1,19 @@
+@model List<Product>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var p in Model)
+    {
+        <tr>
+          <td>@p.Name</td>
+          <td>@p.Amount</td>
+        </tr>
+    }
+  </tbody>
+</table>
